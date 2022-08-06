@@ -1,0 +1,157 @@
+
+:root{
+    /*----------------### Theme 2------------------*/
+    --1-darkBlue___mainBg:hsl(222, 26%, 31%);
+    --1-dark-Blue___toggle-keypadBg:hsl(216, 6%, 17%);
+    --1-dark-Blue___screenBg:hsl(224, 36%, 15%);
+    
+    --1-dark-Blue___keyBg: hsl(225, 21%, 49%);
+    --1-dark-Blue___keyShdw: hsl(224, 28%, 35%);
+    --1-Red___kyBg-toggle: hsl(6, 63%, 50%);
+    --1-dark-Red___keyShdw: hsl(6, 70%, 34%);
+    --1-light-GrayishOrange___keyBg: hsl(30, 25%, 89%);
+    --1-GrayishOrange___keyShdw: hsl(28, 16%, 65%);
+    
+    --1-verydark-GrayishBlue___keyBg: hsl(225,21%, 49%);
+    --1-dark-Blue___keyShdw: hsl(224, 28%, 35%);
+    --1-Red___keyBg-toggle: hsl(6, 63%, 50%);
+    --1-dark-Red___keyShdw: hsl(6, 70%, 34%);
+    --1-light-GrayishOrange___keyBg: hsl(30, 25%, 89%);
+    --1-GrayishOrange___keyShdw: hsl(28, 16%, 65%);
+    
+    --1-verydark-GrayishBlue___txt: hsl(221, 14%, 31%);
+    --1-White___txt: hsl(0, 0, 100%);
+    
+    
+    /*----------------### Theme 2------------------*/
+    --2-light-Gray___mainBg: hsl(0, 0%, 90%);
+    --2-GrayishRed___toggleBg___keypadBg: hsl(0, 5%, 81%);
+    --2-verylight-Gray___screenBg: hsl(0, 0%, 93%);
+    
+    
+    --2-darkmoderate-Cyan___keyBg: hsl(185, 42%, 37%);
+    --2-verydark-Cyan___keyShdw: hsl(185, 58%, 25%);
+    
+    --2-Orange___keyBg___toggle: hsl(25, 98%, 40%);
+    --2-dark-Orange___keyShdw: hsl(25, 99%, 27%);
+    
+    --2-light-GrayishYellow___keyBg: hsl(45, 7%, 89%);
+    --2-dark-GrayishOrange___keyShdw: hsl(35, 11%, 61%);
+    
+    
+    --2-verydark-GrayishYellow___txt: hsl(60, 10%, 19%);
+    --2-white___txt: hsl(0, 0, 100%);
+    
+    
+    
+    /*----------------### Theme 3------------------*/
+    --3-very-dark-Violet___mainBg: hsl(268, 75%, 9%);
+    --very-dark-Violet___toggleBg___keypadBg___screenBg: hsl(268, 71%, 12%);
+    
+    
+    --3-dark-Violet___keyBg: hsl(281, 89%, 26%)
+    --3-vivid-Magenta___keyShdw: hsl(285, 91%, 52%);
+    
+    --3-pure-Cyan___keyBg___toggle: hsl(176, 100%, 44%);
+    --3-soft-Cyan___keyShdw: hsl(177, 92%, 70%);
+    
+    --3-verydark-Violet___keyBg: hsl(268, 47%, 21%);
+    --3-dark-Magenta-__keyShdw: hsl(290, 70%, 36%);
+    
+    
+    --3-light-Yellow___txt: hsl(52, 100%, 62%);
+    --3-verydark-Blue___txt: hsl(198, 20%, 13%);
+    --3-White___txt: hsl(0, 0, 100%);
+    }
+/* reset */
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 32px;
+}
+.whole-container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1108px;
+    width: 50%;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    width: 100%;
+}
+.header-logo{
+    margin-right: auto;
+}
+.toggle,.toggle-choices,.toggle-numbers,.toggle-slider-case{
+    display: flex;
+}
+.toggle{
+    flex-direction: row;
+    align-items: flex-end;
+    gap: .5em;
+}
+.toggle p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.toggle-choices{
+    flex-direction: column;
+}
+.toggle-numbers{
+    gap: .6em;
+}
+.toggle-slider-case{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    padding: 0 5px ;
+    border-radius: 20px;
+}
+.toggle-btn{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    font-size: .1em;
+    color: hsla(228, 45%, 44%,0);
+    transition: .5s ease;
+}
+.theme-1:focus{
+    background-color: var(--1-Red___kyBg-toggle);
+}
+.theme-2:focus{
+    background-color: var(--2-Orange___keyBg___toggle);
+}
+.theme-3:focus{
+    background-color: var(--3-pure-Cyan___keyBg___toggle);
+}
+.keypads-container{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4,1fr);
+}
+.span-2{
+    grid-column: span 2 / auto;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 15%, 20%); }
+/* specific theme styling */
+
+
+
