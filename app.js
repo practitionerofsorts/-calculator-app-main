@@ -1,5 +1,5 @@
 const numbers = document.querySelectorAll(".number");
-const ioDisplay = document.querySelector("#ioDisplay");
+const ioDisplay = document.querySelector(".currentDisplay");
 const resetDisplay = document.querySelector(".reset");
 const Delete = document.querySelector(".delete");
 const toggleBtn = document.querySelectorAll(".toggle-btn");
@@ -26,11 +26,11 @@ function changeTheme(i) {
 numbers.forEach((number) => {
   number.addEventListener("click", () => {
     const numberValue = number.innerText;
-    ioDisplay.value += numberValue;
+    ioDisplay.innerHTML += numberValue;
   });
 });
 resetDisplay.addEventListener("click", () => {
-  ioDisplay.value = null;
+  ioDisplay.innerHTML = null;
 });
 
 Delete.addEventListener("click", () => {

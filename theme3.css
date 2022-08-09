@@ -104,11 +104,12 @@ header{
     font-size: 16px;
     text-transform: uppercase;
 }
-.toggle-choices{
+.toggle-choice{
     flex-direction: column;
+    max-width: 55px;
 }
 .toggle-numbers{
-    gap: .6em;
+    justify-content: space-evenly;
 }
 .toggle-slider-case{
     flex-direction: row;
@@ -140,20 +141,42 @@ header{
 .theme-3:focus{
     background-color: var(--3-pure-Cyan___keyBg___toggle);
 }
+.display{
+    border: 2px solid grey;
+    text-align: right;
+    padding: .5em;
+    height: auto;
+    width: 100%;
+}
+.sumDisplay{
+    /* background-color: black;
+    width: inherit;
+    height: 3px; */
+}
+/* .currentDisplay{
+    
+} */
 .keypads-container{
+    gap: .5em;
+    width: 100%;
     display: grid;
-    gap: 1em;
+    padding: 1em;
     grid-template-columns: repeat(4,1fr);
+}
+.keypad{
+    cursor: pointer;
 }
 .span-2{
     grid-column: span 2 / auto;
 }
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
+.attribution a { color: hsl(228, 15%, 20%); }
 /* specific theme styling */
+
+
+
+
 body{
-    background-color: yellow;
+    background-color: rgb(50, 155, 197);
 }
